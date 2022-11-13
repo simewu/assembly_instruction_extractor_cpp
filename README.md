@@ -25,3 +25,6 @@ The following columns are logged in categorization/experiment_output_categorized
 - Number of Jump instructions
 - Number of No Operation (NOP) instructions
 - List of Instructions in JSON format
+
+## TODO
+- Utilize GDB "[record](https://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)" instruction for compatible CPUs for a major speed-up.
