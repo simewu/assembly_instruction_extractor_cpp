@@ -18,12 +18,16 @@ The following columns are logged in categorization/experiment_output_categorized
 - Number of Arithmetic and Logic instructions
 - Number of Control Flow instructions
 - Number of Miscellaneous instructions
+
+Additional categorizations include:
 - Number of Addition instructions
 - Number of Subtraction instructions
 - Number of Multiply instructions
 - Number of Divide instructions
 - Number of Jump instructions
 - Number of No Operation (NOP) instructions
+
+And finally, the raw data is appended to end last column:
 - List of Instructions in JSON format
 
 ## TODO
