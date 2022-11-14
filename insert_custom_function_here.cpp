@@ -5,6 +5,7 @@ using namespace std;
 
 // Insert custom code here
 void log() {
+	__asm volatile("# LLVM-MCA-BEGIN log":::"memory");
 	int a, b, c;
 	for(int i = 0; i < 100; i++) {
 		a = i % 2;
@@ -12,10 +13,9 @@ void log() {
 		c = i / 4;
 	}
 	return;
+	__asm volatile("# LLVM-MCA-END":::"memory");
 }
 
 int main(int argc, char** argv) {
-	__asm volatile("# LLVM-MCA-BEGIN log":::"memory");
 	log();
-	__asm volatile("# LLVM-MCA-END":::"memory");
 }

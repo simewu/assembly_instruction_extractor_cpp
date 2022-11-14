@@ -37,6 +37,9 @@ _Z3logv:                                # @_Z3logv
 	.cfi_offset rbp, -16
 	mov	rbp, rsp
 	.cfi_def_cfa_register rbp
+	#APP
+	# LLVM-MCA-BEGIN log
+	#NO_APP
 	pop	rbp
 	.cfi_def_cfa rsp, 8
 	ret
@@ -58,13 +61,7 @@ main:                                   # @main
 	sub	rsp, 16
 	mov	dword ptr [rbp - 4], edi
 	mov	qword ptr [rbp - 16], rsi
-	#APP
-	# LLVM-MCA-BEGIN log
-	#NO_APP
 	call	_Z3logv
-	#APP
-	# LLVM-MCA-END
-	#NO_APP
 	xor	eax, eax
 	add	rsp, 16
 	pop	rbp
