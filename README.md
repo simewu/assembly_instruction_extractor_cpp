@@ -36,7 +36,7 @@ Log the distribution of assembly instructions used to execute a given C++ functi
 - Navigate to `static_analysis/` to find the assembly (.asm) and json outputs.
 
 ## Example
-- Using [liboqs]() to analyze the Dilithium family of signature algorithms, the following table is generated:
+- Using [liboqs]() to analyze the Dilithium family of signature algorithms, [the following table is generated](/example/categorization/experiment_output_categorized.csv):
 
 | **Algorithm** | **Experiment** | **Total Instructions** | **Data Movement Instructions** | **Arithmetic and Logic Instructions** | **Control Flow Instructions** | **Miscellaneous Instructions** | **Addition Instructions** | **Subtraction Instructions** | **Multiply Instructions** | **Divide Instructions** | **Jump Instructions** | **No Operation Instructions** | **Operations** |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
