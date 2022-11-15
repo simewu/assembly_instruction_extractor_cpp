@@ -38,8 +38,8 @@ Log the distribution of assembly instructions used to execute a given C++ functi
 ## Example
 - Using [liboqs]() to analyze the Dilithium family of signature algorithms, [the following table is generated](/example/categorization/experiment_output_categorized.csv):
 
-| **Algorithm** | **Experiment** | **Total Instructions** | **Data Movement Instructions** | **Arithmetic and Logic Instructions** | **Control Flow Instructions** | **Miscellaneous Instructions** | **Addition Instructions** | **Subtraction Instructions** | **Multiply Instructions** | **Divide Instructions** | **Jump Instructions** | **No Operation Instructions** | **Operations** |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Algorithm** | **Experiment** | **Total Instructions** | **Data Movement Instructions** | **Arithmetic and Logic Instructions** | **Control Flow Instructions** | **Miscellaneous Instructions** | **Addition Instructions** | **Subtraction Instructions** | **Multiply Instructions** | **Divide Instructions** | **Jump Instructions** | **No Operation Instructions** | **List of Instructions** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Dilithium 2** | **Key generation** | 1168523 | 836573 | 248361 | 70088 | 13501 | 53330 | 9653 | 8705 | 25 | 2116 | 51556 | {'vmovdqa': 592848, ...} |
 | **Dilithium 3** | **Key generation** | 2123647 | 1546149 | 422468 | 132396 | 22634 | 84487 | 14670 | 11719 | 30 | 4457 | 99083 | {'vmovdqa': 1125028,…} |
 | **Dilithium 5** | **Key generation** | 3473747 | 2553515 | 667874 | 217931 | 34427 | 125486 | 21708 | 18168 | 37 | 5028 | 165926 | {'vmovdqa': 1906439,…} |
