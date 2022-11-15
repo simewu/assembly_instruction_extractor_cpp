@@ -2,7 +2,7 @@
 Log the distribution of assembly instructions used to execute a given C++ function using GDB.
 
 ---
-## Usage
+## Usage (dynamic analysis with [GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/Continuing-and-Stepping.html#Continuing-and-Stepping))
 - Insert some C++ code into the `log` function of `insert_custom_function_here.cpp`.
 - Run `./compile.sh` to compile the source code.
 - Run `python3 run_experiment.py` to begin the experiment.
@@ -30,5 +30,12 @@ Additional categorizations include:
 And finally, the raw data is appended to end last column:
 - List of Instructions in JSON format
 
+## Usage (static analysis with [LLVM-MCA](https://llvm.org/docs/CommandGuide/llvm-mca.html))
+- Insert some C++ code into the `log` function of `insert_custom_function_here.cpp`.
+- Run `./compile_static_analysis.sh` to compile the source code and export the analysis.
+- Navigate to static_analysis/ to find the assembly (.asm) and json outputs
+
 ## TODO
-- Utilize GDB "[record](https://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial)" instruction for compatible CPUs for a major speed-up.
+- Add support for Intel Process Tracing (PT) for compatible CPUs
+  - Utilize GDB [`record btrace pt`](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
+  - Utilize perf [`perf record -e intel_pt//`](https://man7.org/linux/man-pages/man1/perf-intel-pt.1.html)
