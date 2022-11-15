@@ -50,7 +50,7 @@ Log the distribution of assembly instructions used to execute a given C++ functi
 | **Dilithium 3** | **Verifying** | 1810025 | 1305255 | 377052 | 113744 | 13974 | 51053 | 12488 | 19008 | 12 | 3593 | 85996 | {'vmovdqa': 1011224,…} |
 | **Dilithium 5** | **Verifying** | 3054261 | 2234737 | 600785 | 195749 | 22990 | 79549 | 18408 | 26368 | 18 | 5259 | 149586 | {'vmovdqa': 1749524,…} |
 
-## TODO
+## Future Work
 - Add support for Intel Process Tracing (PT) for compatible CPUs
   - to utilize GDB [`record btrace pt`](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
   - to utilize perf [`perf record -e intel_pt//`](https://man7.org/linux/man-pages/man1/perf-intel-pt.1.html)
