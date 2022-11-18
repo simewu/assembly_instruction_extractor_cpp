@@ -4,7 +4,7 @@ Log the distribution of assembly instructions used to execute a given C++ functi
 ---
 ## Usage (dynamic analysis with [GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/Continuing-and-Stepping.html#Continuing-and-Stepping))
 - Insert some C++ code into the `log` function of `insert_custom_function_here.cpp`.
-- Run `./compile.sh` to compile the source code.
+- Run `./compile.sh` to compile the source code and quickly run it to check for errors.
 - Run `python3 run_experiment.py` to begin the experiment.
 - Run `cd categorization`
 - Run `cp ../experiment_output.csv .`
